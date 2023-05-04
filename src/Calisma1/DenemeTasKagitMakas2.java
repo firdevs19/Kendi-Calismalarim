@@ -42,13 +42,12 @@ public class DenemeTasKagitMakas2 {
 
     }
     public static String yaziGetir(int sayi){
-        String yazi="";
-        switch (sayi){
-            case 1:yazi="Tas";break;
-            case 2:yazi="Kagit";break;
-            case 3:yazi="Makas";break;
-        }
-        return yazi;
+        return switch (sayi) {
+            case 1 -> "Tas";
+            case 2 -> "Kagit";
+            case 3 -> "Makas";
+            default -> "";
+        };
     }
     public static void oyunBitti(int pc, int oyuncu){
         if (pc<oyuncu){
@@ -66,14 +65,12 @@ public class DenemeTasKagitMakas2 {
             System.out.println("Hatali giris Lütfen 1-3 arsi secim yapiniz!");
             oyuncuSayiGetir();
         }
-        int deger =kullaniciSayi;
-        return deger;
+        return kullaniciSayi;
     }
 
     public static int pcSayiGetir() {
         Random pcSayi=new Random();
-        int pc=pcSayi.nextInt(3)+1;
-        return pc;
+        return pcSayi.nextInt(3)+1;
     }
 
 
