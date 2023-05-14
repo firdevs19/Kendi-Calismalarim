@@ -2,7 +2,7 @@ package Calisma4;
 
 import java.util.Scanner;
 
-public class Methods {
+public class Methods1 {
 
     /*
         Kullanicidan input olarak verilen bir String, baslangic ve bitis indexlerine gore
